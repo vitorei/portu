@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #0f2027, #2c5364);
+    color: white;
+}
+
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 25px;
+    padding: 15px 200px;
+    background: rgba(238, 232, 232, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.sidebar {
+    width: 260px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #00c6ff;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.historico p {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.msg {
+    max-width: 60%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.user {
+    background: #00c6ff;
+    margin-left: auto;
+}
+
+.bot {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.input-area input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.input-area button {
+    margin-left: 10px;
+    padding: 12px 20px;
+    border: none;
+    background: #00c6ff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Cadastro</title>
+
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <a href="index.html">Início</a>
+        <a href="#">Serviços</a>
+        <a href="chat.html">chat</a>
+    </div>
+
+    <div class="container">
+
+        <div class="lado-imagem">
+
+        </div>
+
+        <div class="formulario">
+
+
+            <form id="loginForm">
+                <h2>Entrar</h2>
+
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+
+                <button type="submit">Entrar</button>
+
+                <p class="link-text">
+                    Não tem conta?
+                    <a href="#" id="toCadastro">Cadastrar</a>
+                </p>
+            </form>
+
+
+            <form id="cadastroForm" class="active">
+                <h2>Criar Conta</h2>
+
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Nome completo</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" required>
+                    <label>Confirmar senha</label>
+                </div>
+
+                <button type="submit">Cadastrar</button>
+
+
+                <p class="link-text">
+                    Já tem conta?
+                    <a href="#" id="toLogin">Entrar</a>
+                </p>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
